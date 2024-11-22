@@ -4,7 +4,7 @@ const Drivehompage = () => {
   return (
    <div className="container mx-10">
     <div className="drivesection my-14 flex mx-28" >
-        <img className="rounded-lg" src="../images/car.jpg" alt="" />
+        <img className="z-10 transform hover:scale-105 transition-transform duration-300 rounded-lg" src="../images/car.jpg" alt="" />
         <div className="drive-text mx-20">
             <h1 className="text-4xl">Drive when you</h1>
             <h1 className="text-4xl ">want, make what</h1>

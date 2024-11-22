@@ -1,9 +1,14 @@
 
+
+
+
+import FAQ from "../../Components/Faq"
+import Options from "../Login/Options"
+
 import Banner from "./Banner"
 import Bannerform from "./Bannerform"
 import Drivehompage from "./Drivehompage"
-import Footer from "./Footer"
-import Navbar from "./Navbar"
+
 import Rentcar from "./Rentcar"
 import Suggestions from "./Suggestions"
 import Valanbusiness from "./Valanbusiness"
@@ -12,6 +17,7 @@ import Valanbusiness from "./Valanbusiness"
 function Home() {
   return (
     <div>
+      
         {/* <Navbar/> */}
    
     <Banner/>
@@ -20,7 +26,12 @@ function Home() {
      <Drivehompage/>
      <Valanbusiness/>
      <Rentcar/>
+     <Options/>
+     {/* <Drive/> */}
      {/* <Footer/> */}
+     <FAQ/>
+     
+     
     </div>
   )
 }

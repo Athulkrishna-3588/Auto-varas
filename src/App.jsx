@@ -35,7 +35,8 @@ function App() {
         <Route path='to-rider' element={<RiderRegister />} />
         <Route path='to-drive' element={<Rider/>} />
         <Route path='to-ride' element={<Chooseride/>} />
-
+        <Route path='to-drivee' element={<Drive/>}/>
+        
 
     </Routes>
      </>

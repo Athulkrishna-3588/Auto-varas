@@ -1,9 +1,11 @@
-
+import { motion } from "framer-motion"
 
 const Bannerform = () => {
   return (
     <div>
-      <div className="bg-white p-6 rounded-lg shadow-lg mx-20 max-w-md  w-full">
+      <motion.div  initial={{ opacity:0}}
+          animate={{opacity:3}}
+          transition={{ duration:3, delay:0.5}} className="bg-white p-6 rounded-lg shadow-lg mx-20 max-w-md  w-full">
       <h1 className="text-4xl font-bold mb-8">Go anywhere with Valan<span className="text-yellow-300">Pulse</span></h1>
       
       <div className="flex space-x-4 mb-6">
@@ -54,7 +56,7 @@ const Bannerform = () => {
         </button>
       </div>
       
-    </div>
+    </motion.div>
     
     </div>
   )

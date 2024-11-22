@@ -4,7 +4,7 @@ const Rentcar = () => {
   return (
     <div className="container mx-28">
     <div className="rentcar my-6 flex">
-        <img className="h-[500px] w-[500px]" src="../images/rent.jpg" alt="" />
+        <img className="h-[500px] w-[500px] z-10 transform hover:scale-105 transition-transform duration-300" src="../images/rent.jpg" alt="" />
         <div className="drive-text my-32 mx-14">
             <h1 className="text-4xl">Drive when you</h1>
             <h1 className="text-4xl">want, make what</h1>

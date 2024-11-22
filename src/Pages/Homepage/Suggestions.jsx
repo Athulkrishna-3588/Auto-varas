@@ -11,7 +11,7 @@ const Suggestions = () => {
                     Request a ride and go</p>
                     <button className="bg-white rounded-xl w-[100px]">Details</button>
                 </div>
-                <img className="h-[150px] w-[150px]" src="../images/ride.png" alt="" />
+                <img className="h-[150px] w-[150px] z-20 transform hover:scale-105 transition-transform duration-500" src="../images/ride.png" alt="" />
             </div>
 
             <div className="ride flex bg-gray-300  rounded-xl justify-evenly p-5">
@@ -21,7 +21,7 @@ const Suggestions = () => {
                     Request a ride and go</p>
                     <button className="bg-white rounded-xl w-[100px]">Details</button>
                 </div>
-                <img className="h-[150px] w-[150px]" src="../images/rideauto.png" alt="" />
+                <img className="h-[150px] w-[150px] z-20 transform hover:scale-105 transition-transform duration-500" src="../images/rideauto.png" alt="" />
             </div>
 
             <div className="ride flex bg-gray-300  rounded-xl justify-evenly p-5">
@@ -31,7 +31,7 @@ const Suggestions = () => {
                     Request a ride and go</p>
                     <button className="bg-white rounded-xl w-[100px]">Details</button>
                 </div>
-                <img className="h-[150px] w-[150px]" src="../images/sedan.png" alt="" />
+                <img className="h-[150px] w-[150px] z-10 transform hover:scale-105 transition-transform duration-500" src="../images/sedan.png" alt="" />
             </div>
             
         </div>
