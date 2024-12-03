@@ -1,37 +1,31 @@
+import Navbar from "../Pages/Homepage/Navbar"
 
- 
- const About = () => {
-   return (
-   <div className="about-container">
-    <div className="about-section">
-        <div className="signup">
-            <h1>Sign up today</h1>
-            <p>Ready to experience Uber for yourself? Take your first trip as a rider, or get on the road to earning as <br />
-             a driver.</p>
-             <div className="signup-button flex">
-                <button>Sign up to ride</button>
-                <button>Sign up to drive</button>
-             </div>
-        </div>
-        <div className="move flex">
-            <div className="move-img flex">
-                <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,h_384,w_576/v1600423778/assets/5a/eb49b9-5a81-41fd-92b5-99a5cb8900ef/original/womanWithPhone_03.svg" alt="" />
-                <div className="move-text">
-                    <h1>Ways people move around , <br />
-                     the world</h1>
-                     <p>The Uber app gives you the power to get where you want to go  <br />
-                     with access to different types of rides across more than <br />
-                      10,000 cities.</p>
-                      <button>View ride options</button>
+
+const About = () => {
+  return (
+
+    <>
+    <Navbar/>
+    <div className="about-section mx-36">
+        
+        <div className="about-container">
+            <div className="about-header">
+                <h1 className="text-5xl font-semibold">Uber’s technology offerings</h1>
+                <p className="my-5 text-gray-500">Changing how people can request rides and get from point A to point B is just the beginning.</p>
+                <button className="bg-black h-[60px] w-[150px] rounded-xl text-white">Explore the app</button>
+            </div>
+            
+            <div className="about-details">
+                <h1 className="text-3xl">Uber apps, products, and other offerings</h1>
+                <div className="about-para flex m-auto">
+                    <p>Uber is a technology company whose mission is to reimagine the way the world moves for the better. Our technology helps us develop and maintain multisided platforms that match consumers looking for rides and independent providers of ride services, as well as with other forms of transportation, including public transit, bikes, and scooters.</p>
+                    <p>We also connect consumers and restaurants, grocers, and other merchants so they can buy and sell meals, groceries, and other items, then we match them with independent delivery service providers. Plus, Uber connects shippers and carriers in the freight industry.</p>
                 </div>
             </div>
         </div>
-        <div className="app">
-            
-        </div>
     </div>
-   </div>
-   )
- }
- 
- export default About
+    </>
+  )
+}
+
+export default About

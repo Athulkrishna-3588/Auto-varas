@@ -2,8 +2,10 @@
 
 
 
+import About from "../../Components/About"
 import FAQ from "../../Components/Faq"
 import Options from "../Login/Options"
+import Navbaaar from "../Navbaaar"
 
 import Banner from "./Banner"
 import Bannerform from "./Bannerform"
@@ -27,9 +29,10 @@ function Home() {
      <Valanbusiness/>
      <Rentcar/>
      <Options/>
+    
      {/* <Drive/> */}
      {/* <Footer/> */}
-     <FAQ/>
+     
      
      
     </div>

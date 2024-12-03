@@ -14,17 +14,17 @@ const Banner = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
       {/* Left Content */}
       <div className="mx-4 sm:mx-6 lg:mx-14">
-        <h1 className="animate-typing  text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
           Get Around{' '}
-          <span className="animate-typing overflow-hidden whitespace-nowrap text-yellow-500">Valanchery</span>{' '}
+          <span className=" animate-typing overflow-hidden whitespace-nowrap text-yellow-500">Valanchery</span>{' '}
           with Ease
         </h1>
-        <p className="animate-typing overflow-hidden whitespace-nowrap text-lg sm:text-xl lg:text-2xl text-gray-600 my-4">
+        <p className="overflow-hidden whitespace-nowrap text-lg sm:text-xl lg:text-2xl text-gray-600 my-4">
           Experience the convenience of auto rickshaw booking at your fingertips!
         </p>
         <div className="flex flex-wrap gap-4 pt-4">
           <button
-            className="border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-lg rounded-full"
+            className="sm:w-[170px] border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-lg rounded-full"
           >
             Book A Ride
           </button>
@@ -34,6 +34,7 @@ const Banner = () => {
             Learn More
           </button>
         </div>
+        
       </div>
 
       {/* Right Image */}
@@ -43,7 +44,10 @@ const Banner = () => {
         <div 
         
         className="relative z-10 transform hover:scale-105 transition-transform duration-300">
-          <img
+          <motion.img
+          initial={{ opacity: 0, x:200}}
+          animate={{opacity: 1, x:0}}
+          transition={{ type: "spring", stiffness: 100, delay:0.2}}
             src="../images/auto.png"
             alt="Auto Rickshaw"
             className="w-full h-auto"

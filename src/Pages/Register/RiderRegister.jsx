@@ -1,4 +1,5 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,10 +18,11 @@ const LoginForm = () => {
           className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         
-        
-        <button className="w-full bg-black text-white py-3 rounded-md font-medium hover:bg-gray-800 transition">
+        <div className="w-full bg-black text-white py-3 rounded-md font-medium hover:bg-gray-800 transition">
+        <Link to={"/to-chooseride"} className='px-36'>
           Continue
-        </button>
+        </Link>
+        </div>
 
         <div className="flex items-center my-4">
           <div className="flex-grow h-px bg-gray-300"></div>

@@ -18,6 +18,8 @@ import Options from './Pages/Login/Options'
 import Rider from './Pages/Login/Rider'
 import DriverRegister from './Pages/Register/DriverRegister'
 import RiderRegister from './Pages/Register/RiderRegister'
+import Navbaaar from './Pages/Navbaaar'
+import DriverDashboard from './Components/DriverDashboard'
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
         <Route path='to-drive' element={<Rider/>} />
         <Route path='to-ride' element={<Chooseride/>} />
         <Route path='to-drivee' element={<Drive/>}/>
+        <Route path='to-dashboard' element={<DriverDashboard/>}/>
+        <Route path='to-chooseride' element={<Chooseride/>}/>
         
 
     </Routes>

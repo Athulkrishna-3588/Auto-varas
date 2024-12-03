@@ -18,8 +18,8 @@ const Navbar = () => {
         <div className="container  px-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
-              <span className="font-bold text-xl"><span className="text-black font-bold text-2xl">V</span >alan<span className="text-yellow-500"><span className="font-bold text-2xl">P</span>ulse</span></span>
-              <div className="space-x-4">
+              <span className="font-bold animate-pulse text-xl"><span className="text-black font-bold text-2xl">V</span >alan<span className="text-yellow-500"><span className="font-bold text-2xl">P</span>ulse</span></span>
+              <div className=" space-x-4">
                 <Link to="/" className="hover:opacity-75">Home</Link>
                 <Link to="#" className="hover:opacity-75">Ride</Link>
                 <Link to={"/to-drivee"}  className="hover:opacity-75">Drive</Link>
@@ -28,9 +28,9 @@ const Navbar = () => {
             </div>
             <div className="flex items-center space-x-4">
               <button className="hover:opacity-75">EN</button>
-              <button className="hover:opacity-75">Help</button>
+              <button className=" hover:opacity-75">Help</button>
               <Link to={"login"} className="hover:opacity-75">Log in</Link>
-              <Link to={"signup"} className="bg-yellow-300 text-black px-4 py-2 rounded-full hover:bg-gray-100">
+              <Link to={"signup"} className="sm:w-[150px] sm:px-10  bg-yellow-300 text-black px-4 py-2 rounded-full hover:bg-gray-100">
                 Sign up
               </Link>
             </div>
