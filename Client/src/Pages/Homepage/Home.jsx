@@ -3,7 +3,7 @@
 
 
 import About from "../../Components/About"
-import FAQ from "../../Components/Faq"
+// import FAQ from "../../Components/Faq"
 import Options from "../Login/Options"
 import Navbaaar from "../Navbaaar"
 

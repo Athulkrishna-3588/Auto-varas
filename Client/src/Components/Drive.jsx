@@ -1,6 +1,6 @@
 import Footer from "../Pages/Homepage/Footer"
 import Navbar from "../Pages/Homepage/Navbar"
-import FAQ from "./Faq"
+// import FAQ from "./Faq"
 
 
 const Drive = () => {
