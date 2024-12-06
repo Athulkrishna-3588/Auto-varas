@@ -28,7 +28,7 @@ function Home() {
      <Drivehompage/>
      <Valanbusiness/>
      <Rentcar/>
-     <Options/>
+     {/* <Options/> */}
     
      {/* <Drive/> */}
      {/* <Footer/> */}

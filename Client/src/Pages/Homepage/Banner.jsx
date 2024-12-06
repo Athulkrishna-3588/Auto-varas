@@ -9,7 +9,7 @@ const Banner = () => {
     initial={{ opacity:0}}
           animate={{opacity:3}}
           transition={{ duration:3, delay:0.5}} 
-    className="flex items-center justify-center mx-4 sm:mx-6 lg:mx-10 p-4">
+    className="flex items-center justify-center sm:mx-6 lg:mx-10 p-4">
   <div className="container mx-auto">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
       {/* Left Content */}
@@ -24,12 +24,12 @@ const Banner = () => {
         </p>
         <div className="flex flex-wrap gap-4 pt-4">
           <button
-            className="sm:w-[170px] border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-lg rounded-full"
+            className="sm:w-[170px] border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold px-5 py-3 sm:px-8 sm:py-6 text-sm sm:text-lg rounded-full"
           >
             Book A Ride
           </button>
           <button
-            className="border border-gray-900 text-gray-900 hover:bg-yellow-300 hover:text-black font-semibold px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-lg rounded-full"
+            className="border border-gray-900 text-gray-900 hover:bg-yellow-300 hover:text-black font-semibold px-5 py-3 sm:px-8 sm:py-6 text-sm sm:text-lg rounded-full"
           >
             Learn More
           </button>
