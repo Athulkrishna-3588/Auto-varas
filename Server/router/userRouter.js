@@ -1,12 +1,21 @@
 import express from "express";
 
-
 import mailSender from "../utils/mailSender.js";
-import User from "../model/userModel.js"
+import User from "../model/userModel.js";
 
 var router = express.Router();
 
 const otpType = {};
+
+router.post("/signup", async (req, res) => {
+  // let userSession=await
+  console.log(req.body);
+  res.status(200).json({
+    success: true,
+    message: "OTP sent successfullyOTP sent successfully",
+    // error:  error.message,
+  });
+});
 
 // LOGIN AUTHENTICATION
 router.post("/login", async (req, res) => {
@@ -31,19 +40,19 @@ router.post("/submitOTP", async (req, res) => {
     );
 
     otpType.otpCode = otpCode;
-    console.log(otpType,"useruseruseruseruseruseruser");
-    
+    console.log(otpType, "useruseruseruseruseruseruser");
+
     console.log("Email sent successfully: ", mailResponse);
 
     res.status(200).json({
       success: true,
       message: "OTP sent successfullyOTP sent successfully",
-      data:null
+      data: null,
     });
   } catch (error) {
     res.status(500).json({
       success: false,
-      error:  error.message,
+      error: error.message,
     });
   }
 });
@@ -63,7 +72,6 @@ router.post("/otpVerification", async (req, res) => {
     }
 
     console.log(otpType.otpCode);
-    
 
     // Find recent OTP for the email
     if (otpType.otpCode != otp) {

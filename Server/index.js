@@ -8,7 +8,7 @@ import cors from "cors";
 
 import { errorHandler, notFound } from "./middlewares/errorMiddlware.js";
 import userRouter from "./router/userRouter.js"
-import connect from "../Auto-varas/Server/connect/connect.js"
+import connect from "./connect/connect.js"
 
 // dotenv Configration
 dotenv.config();

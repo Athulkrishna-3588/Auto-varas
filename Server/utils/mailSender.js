@@ -6,8 +6,8 @@ const mailSender = async (email, title, body) => {
     // Create a Transporter to send emails
     let transporter = nodemailer.createTransport({
       host: process.env.MAIL_HOST,
-      port: 587, // Use 465 if using SSL
-      secure: false, // Set to true for port 465
+      port: 587, // Use 465 for SSL, or 587 for TLS
+      secure: false, // Set true for port 465 (SSL)
       auth: {
         user: process.env.MAIL_USER,
         pass: process.env.MAIL_PASS,
@@ -16,7 +16,7 @@ const mailSender = async (email, title, body) => {
     
     // Send emails to users
     let info = await transporter.sendMail({
-      from: 'raziqsur@gmail.com',
+      from: process.env.MAIL_USER,
       to: email,
       subject: title,
       html: body,
@@ -24,7 +24,7 @@ const mailSender = async (email, title, body) => {
     console.log("Email info: ", info);
     return info;
   } catch (error) {
-    console.log(error.message);
+    console.log(error.message, "nodemaler error");
   }
 };
 export default mailSender;

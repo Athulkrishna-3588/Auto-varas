@@ -21,6 +21,7 @@ function DriverRegister() {
   };
 
   return (
+    <div className="mx-3">
     <div className="max-w-md mx-auto my-20 p-6 bg-white shadow-md rounded-md">
       <h1 className="text-2xl font-bold text-gray-900">Welcome, Athul</h1>
       <p className="text-gray-600 mt-2">
@@ -85,6 +86,7 @@ function DriverRegister() {
         </Link>
 
       </form>
+    </div>
     </div>
   );
 }
